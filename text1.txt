@@ -1,0 +1,39 @@
+[TOC]
+
+## SSD固态硬盘
+
+主控    缓存：独立缓存、模拟缓存    闪存颗粒
+
+1、接口：PCIE（少见）
+
+&#x20;         SATA（机械硬盘也用）：SATA3.0
+
+&#x20;         M.2：M key ：PCIE数据通道  、 NVIE传输协议（为了让硬盘能走PCIE通道）
+
+&#x20;                  B\&M key  &#x20;
+
+![image.png](https://note.youdao.com/yws/res/1250/WEBRESOURCE7078d39b2f425918fdf4e1e9a6e40ce4)
+
+2、闪存颗粒：
+
+![image.png](https://note.youdao.com/yws/res/1253/WEBRESOURCEed992efe1441e60fe64a435f60dbb5fb)
+
+容量越来越大、速度越来越慢   **TLC主流   SCL MLC贵！**
+
+白片、黑片、
+
+3、主控
+
+4、缓存：
+
+5、4K读写性能and顺序写入：顺序对于大文件，放在一起的；4K读写是随机读写，小文件，碎文件，所以影响流畅度！
+
+![image.png](https://note.youdao.com/yws/res/1266/WEBRESOURCEe18be1d6499f9086b65818aae12afe31)
+
+**总结：首先由SATA与PCIE通道，因为没有具体命名，所以对应的接口就叫SATA与PCIE接口，但有一个命名的接口M.2接口，它可以支持SATA与PCIE通道（但是二选一）**
+
+**只要是SATA接口的，那就只能是AHCI协议（相对来说慢）、而M.2接口的，支持SATA，也支持PCIE，但是支持PCIE的同时，也要看用的协议是AHCI还是NVMe，NVMe更快！注意，一般直接sata协议，那就说的AHCI协议**
+
+![image.png](https://note.youdao.com/yws/res/1291/WEBRESOURCE68dfeaf8074f2dccdde96741b80abc73)
+
+## 内存
